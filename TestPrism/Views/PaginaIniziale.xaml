@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestPrism.Views.PaginaIniziale"
+             
+             
+             xmlns:prism="http://prismlibrary.com"
+             Title="PaginaIniziale">
+    <VerticalStackLayout>
+        <Label 
+            Text="ViewC"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        
+        <Button Text="To View A" Command="{prism:NavigateTo 'ViewA'}"/>
+        
+    </VerticalStackLayout>
+</ContentPage>

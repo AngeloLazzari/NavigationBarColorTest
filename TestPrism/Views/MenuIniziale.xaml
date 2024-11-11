@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<FlyoutPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestPrism.Views.MenuIniziale"
+            xmlns:prism="http://prismlibrary.com"
+            prism:ViewModelLocator.AutowireViewModel="Automatic"
+             Title="MenuIniziale"
+            NavigationPage.HasNavigationBar="False"
+            BackgroundColor="Red"
+            Background="Yellow"
+            >
+
+    <FlyoutPage.Flyout>
+        <ContentPage Title="Menu">
+            <VerticalStackLayout>
+                <Label 
+            Text="Menu"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+                <Button Text="Pagina Iniziale" Command="{Binding ApriPaginaInizizale}" />
+                <Button Text="Pagina 2" Command="{Binding ApriPagina2}" />
+                <Button Text="Pagina 3" Command="{Binding ApriPagina3}" />
+                
+            </VerticalStackLayout>
+        </ContentPage>
+    </FlyoutPage.Flyout>
+    
+</FlyoutPage>
